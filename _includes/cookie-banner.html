@@ -1,0 +1,185 @@
+{% assign t = site.data.i18n[page.lang] %}
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="fixed bottom-0 inset-x-0 z-50 p-4 sm:p-6 hidden">
+  <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-2xl border border-gray-200 p-6">
+
+    <!-- Simple view -->
+    <div id="cookie-simple">
+      <p class="text-sm text-gray-600 mb-4">
+        {{ t.cookie_text }}
+        <a href="{{ t.cookie_policy_url | relative_url }}" class="text-primary-700 underline">{{ t.cookie_policy_link }}</a>
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <button onclick="cookieConsent.acceptAll()" class="px-4 py-2 bg-primary-700 text-white text-sm font-medium rounded-lg hover:bg-primary-800 transition">
+          {{ t.cookie_accept_all }}
+        </button>
+        <button onclick="cookieConsent.acceptNecessary()" class="px-4 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-200 transition">
+          {{ t.cookie_necessary_only }}
+        </button>
+        <button onclick="cookieConsent.showDetails()" class="px-4 py-2 text-gray-500 text-sm font-medium hover:text-gray-700 transition">
+          {{ t.cookie_customize }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Detailed view -->
+    <div id="cookie-details" class="hidden">
+      <h3 class="font-display text-lg font-bold text-gray-800 mb-4">{{ t.cookie_manage_title }}</h3>
+
+      <!-- Necessari -->
+      <div class="flex items-center justify-between py-3 border-b border-gray-100">
+        <div>
+          <p class="text-sm font-medium text-gray-800">{{ t.cookie_cat_necessary }}</p>
+          <p class="text-xs text-gray-500">{{ t.cookie_cat_necessary_desc }}</p>
+        </div>
+        <span class="text-xs text-gray-400 italic">{{ t.cookie_always_active }}</span>
+      </div>
+
+      <!-- Statistiche -->
+      <div class="flex items-center justify-between py-3 border-b border-gray-100">
+        <div>
+          <p class="text-sm font-medium text-gray-800">{{ t.cookie_cat_analytics }}</p>
+          <p class="text-xs text-gray-500">{{ t.cookie_cat_analytics_desc }}</p>
+        </div>
+        <button id="cookie-toggle-analytics" onclick="cookieConsent.toggleAnalytics()"
+                class="relative w-10 h-5 rounded-full transition-colors bg-gray-300">
+          <span id="cookie-toggle-knob" class="absolute top-0.5 left-0 w-4 h-4 bg-white rounded-full shadow transition-transform translate-x-0.5"></span>
+        </button>
+      </div>
+
+      <div class="flex flex-wrap gap-3 mt-4">
+        <button onclick="cookieConsent.savePreferences()" class="px-4 py-2 bg-primary-700 text-white text-sm font-medium rounded-lg hover:bg-primary-800 transition">
+          {{ t.cookie_save }}
+        </button>
+        <button onclick="cookieConsent.acceptAll()" class="px-4 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-200 transition">
+          {{ t.cookie_accept_all }}
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  var cookieConsent = (function() {
+    var preferences = { analytics: false };
+    var banner = document.getElementById('cookie-banner');
+    var simpleView = document.getElementById('cookie-simple');
+    var detailsView = document.getElementById('cookie-details');
+    var toggleBtn = document.getElementById('cookie-toggle-analytics');
+    var toggleKnob = document.getElementById('cookie-toggle-knob');
+
+    function getCookie(name) {
+      var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+      return match ? decodeURIComponent(match[2]) : null;
+    }
+
+    function setCookie(name, value, days) {
+      var d = new Date();
+      d.setTime(d.getTime() + days * 86400000);
+      document.cookie = name + '=' + encodeURIComponent(value) + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+    }
+
+    function updateToggleUI() {
+      if (preferences.analytics) {
+        toggleBtn.classList.remove('bg-gray-300');
+        toggleBtn.classList.add('bg-primary-700');
+        toggleKnob.classList.remove('translate-x-0.5');
+        toggleKnob.classList.add('translate-x-5');
+      } else {
+        toggleBtn.classList.remove('bg-primary-700');
+        toggleBtn.classList.add('bg-gray-300');
+        toggleKnob.classList.remove('translate-x-5');
+        toggleKnob.classList.add('translate-x-0.5');
+      }
+    }
+
+    function showBanner() {
+      banner.classList.remove('hidden');
+    }
+
+    function hideBanner() {
+      banner.classList.add('hidden');
+      simpleView.classList.remove('hidden');
+      detailsView.classList.add('hidden');
+    }
+
+    function save() {
+      setCookie('cookie_consent', JSON.stringify(preferences), 365);
+      hideBanner();
+      applyPreferences();
+    }
+
+    function applyPreferences() {
+      if (preferences.analytics && !window._gaLoaded) {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-QWR529KGEE';
+        s.async = true;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function(){ window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-QWR529KGEE', { anonymize_ip: true });
+        window._gaLoaded = true;
+      }
+    }
+
+    // Init
+    var saved = getCookie('cookie_consent');
+    if (saved) {
+      try {
+        preferences = JSON.parse(saved);
+        applyPreferences();
+      } catch (e) {
+        showBanner();
+      }
+    } else {
+      showBanner();
+    }
+
+    // Listen for "reopen" event from footer
+    window.addEventListener('open-cookie-banner', function() {
+      var saved = getCookie('cookie_consent');
+      if (saved) {
+        try { preferences = JSON.parse(saved); } catch (e) {}
+      }
+      updateToggleUI();
+      simpleView.classList.add('hidden');
+      detailsView.classList.remove('hidden');
+      showBanner();
+    });
+
+    return {
+      acceptAll: function() {
+        preferences = { analytics: true };
+        save();
+      },
+      acceptNecessary: function() {
+        preferences = { analytics: false };
+        save();
+      },
+      showDetails: function() {
+        updateToggleUI();
+        simpleView.classList.add('hidden');
+        detailsView.classList.remove('hidden');
+      },
+      toggleAnalytics: function() {
+        preferences.analytics = !preferences.analytics;
+        updateToggleUI();
+      },
+      savePreferences: function() {
+        save();
+      }
+    };
+  })();
+
+  // Global helper
+  window.cookieConsentGranted = function(category) {
+    try {
+      var c = document.cookie.match(/(^| )cookie_consent=([^;]+)/);
+      if (!c) return false;
+      return JSON.parse(decodeURIComponent(c[2]))[category] === true;
+    } catch (e) { return false; }
+  };
+</script>

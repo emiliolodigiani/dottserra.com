@@ -23,5 +23,11 @@
       <p class="text-sm text-primary-300/50">{{ t.footer_text }}</p>
       <p class="text-xs text-primary-400/30 max-w-xl mx-auto leading-relaxed pt-2">{{ t.footer_disclaimer }}</p>
     </div>
+
+    <div class="flex items-center justify-center gap-4 mt-6 text-xs text-primary-400/40">
+      <a href="{{ t.cookie_policy_url | relative_url }}" class="hover:text-primary-300 transition-colors">{{ t.cookie_policy_link }}</a>
+      <span class="w-1 h-1 rounded-full bg-primary-700"></span>
+      <button onclick="window.dispatchEvent(new Event('open-cookie-banner'))" class="hover:text-primary-300 transition-colors cursor-pointer">{{ t.cookie_manage }}</button>
+    </div>
   </div>
 </footer>
