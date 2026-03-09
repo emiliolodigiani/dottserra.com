@@ -1,13 +1,13 @@
 {% assign t = site.data.i18n[page.lang] %}
 {% if page.lang == 'it' %}
-  {% assign switch_url = '/fr/' %}
+  {% assign switch_url = '/fr/' | relative_url %}
 {% else %}
-  {% assign switch_url = '/' %}
+  {% assign switch_url = '/' | relative_url %}
 {% endif %}
 
 <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200/60">
   <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 lg:h-18">
-    <a href="{% if page.lang == 'fr' %}/fr/{% else %}/{% endif %}" class="flex flex-col">
+    <a href="{% if page.lang == 'fr' %}{{ '/fr/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="flex flex-col">
       <span class="font-display text-xl font-bold text-primary-900 tracking-tight leading-tight">{{ t.site_title }}</span>
       <span class="text-[10px] font-medium text-gray-400 tracking-wider uppercase leading-tight">{{ t.site_subtitle }}</span>
     </a>
