@@ -1,7 +1,7 @@
 title: "Dott. Umberto Serra - Medico Oculista"
 description: "Dott. Umberto Serra - Medico Chirurgo Specialista in Oftalmologia"
-baseurl: ""
-url: "https://dottserra.com"
+baseurl: "/dottserra-com"
+url: "https://emiliolodigiani.github.io"
 
 defaults:
   - scope:
