@@ -1,36 +1,49 @@
 it:
-  site_title: "Dr. Umberto Serra"
+  site_title: "Dott. Umberto Serra"
   site_subtitle: "Medico Chirurgo Specialista in Oftalmologia"
   nav_about: "Il Dottore"
   nav_surgery: "Chirurgia"
   nav_services: "Visite"
-  nav_clinics: "Dove Visito"
+  nav_research: "Pubblicazioni"
+  nav_clinics: "Dove Visita"
   lang_switch: "FR"
   lang_switch_label: "Français"
 
-  hero_title: "Dr. Umberto Serra"
+  hero_title: "Dott. Umberto Serra"
   hero_subtitle: "Medico Chirurgo Specialista in Oftalmologia"
-  hero_description: "Diagnosi, terapia medica e chirurgia delle patologie oculari con un approccio attento e personalizzato per ogni paziente."
+  hero_description: "Chirurgia vitreo-retinica, chirurgia della cataratta e trattamento delle patologie oculari. Oltre 6.000 interventi eseguiti con tecniche microchirurgiche di ultima generazione."
   hero_cta: "Prenota una visita"
   hero_surgery_cta: "Attività Chirurgica"
 
-  about_title: "Il Dottore"
+  about_title: "Dott. Umberto Serra"
   about_p1: >
-    Il Dr. Umberto Serra è Medico Chirurgo Specialista in Oftalmologia, con una formazione
-    maturata presso centri di eccellenza italiani e internazionali. La sua pratica clinica
-    si fonda su un aggiornamento scientifico costante e sull'utilizzo delle tecnologie
-    diagnostiche e chirurgiche più avanzate.
+    Il Dott. Umberto Serra è <strong>Medico Chirurgo Specialista in Oftalmologia</strong>.
+    Laureato in Medicina e Chirurgia presso l'<strong>Università degli Studi di Pavia</strong> nel 2003,
+    ha conseguito la Specializzazione in Oftalmologia presso lo stesso ateneo nel 2008,
+    ottenendo nello stesso anno il Diploma dell'<strong>European Board of Ophthalmology</strong> a Parigi.
   about_p2: >
-    L'approccio del Dr. Serra è orientato all'ascolto del paziente e alla definizione di
-    percorsi terapeutici personalizzati, dalla diagnosi alla riabilitazione visiva,
-    garantendo la massima cura in ogni fase del trattamento.
-  about_experience_title: "Formazione e Competenze"
-  about_experience:
-    - "Laurea in Medicina e Chirurgia"
-    - "Specializzazione in Oftalmologia"
-    - "Chirurgia del segmento anteriore e posteriore"
-    - "Diagnostica strumentale avanzata"
-    - "Trattamenti laser retinici e del glaucoma"
+    Nel 2016 ha completato il <strong>Diploma Interuniversitario in Patologia Retinica</strong>
+    presso le Università di Parigi, Digione e Bordeaux, e nel 2018 ha svolto un
+    fellowship in <strong>Chirurgia Vitreo-Retinica</strong> presso il <strong>Roski Eye Institute</strong>
+    dell'University of Southern California a Los Angeles.
+  about_p3: >
+    Dal 2010 al 2024 ha ricoperto il ruolo di Dirigente Medico presso strutture
+    ospedaliere piemontesi, tra cui l'<strong>Ospedale Oftalmico di Torino</strong> dal 2013.
+    Ha eseguito oltre <strong>6.000 interventi chirurgici</strong>. Dal 2013 collabora con i
+    <strong>Medici Volontari Italiani</strong>, partecipando a missioni umanitarie in Madagascar e Libia.
+  about_education_title: "Formazione"
+  about_education:
+    - "Laurea in Medicina e Chirurgia — Università di Pavia (2003)"
+    - "Specializzazione in Oftalmologia — Università di Pavia (2008)"
+    - "European Board of Ophthalmology — Parigi (2008)"
+    - "Diploma in Patologia Retinica — Università di Parigi-Digione-Bordeaux (2016)"
+    - "Fellowship Chirurgia Vitreo-Retinica — Roski Eye Institute, USC Los Angeles (2018)"
+  about_languages_title: "Il dottore visita in"
+  about_languages:
+    - "Italiano"
+    - "Inglese"
+    - "Francese"
+    - "Portoghese"
 
   services_title: "Visite Specialistiche"
   services_subtitle: "L'attività ambulatoriale comprende visite oculistiche complete e approfondimenti diagnostici mirati."
@@ -55,18 +68,21 @@ it:
       icon: "child"
 
   surgery_title: "Attività Chirurgica"
-  surgery_subtitle: "Il Dr. Serra esegue interventi di chirurgia oculare con tecniche microchirurgiche di ultima generazione."
+  surgery_subtitle: "Oltre 6.000 interventi eseguiti con tecniche microchirurgiche di ultima generazione."
   surgery_intro: >
-    L'attività chirurgica del Dr. Serra si concentra sulla chirurgia dell'occhio interno,
+    L'attività chirurgica del Dott. Serra si concentra sulla chirurgia dell'occhio interno,
     con particolare competenza nella chirurgia vitreo-retinica e nella chirurgia della cataratta.
-    Ogni intervento viene pianificato in modo accurato sulla base delle caratteristiche
-    individuali del paziente, con l'obiettivo di ottenere il miglior risultato funzionale possibile.
+    La formazione internazionale — dal Roski Eye Institute di Los Angeles alle università francesi —
+    garantisce un approccio aggiornato alle tecniche più avanzate. Ogni intervento viene pianificato
+    in modo accurato sulla base delle caratteristiche individuali del paziente.
   surgery_procedures_title: "Principali interventi"
   surgery_procedures:
     - title: "Chirurgia Vitreo-Retinica"
       description: "Vitrectomia per il trattamento del distacco di retina, della membrana epiretinica (pucker maculare), del foro maculare, delle complicanze della retinopatia diabetica e delle emorragie vitreali."
     - title: "Chirurgia della Cataratta"
-      description: "Facoemulsificazione con impianto di lente intraoculare, incluse lenti toriche per la correzione dell'astigmatismo e lenti multifocali per la presbiopia."
+      description: "Facoemulsificazione con impianto di lente intraoculare, incluse lenti toriche per la correzione dell'astigmatismo e lenti multifocali per la presbiopia. Gestione delle cataratte complicate."
+    - title: "Chirurgia Refrattiva"
+      description: "Correzione dei difetti visivi (miopia, ipermetropia, astigmatismo, presbiopia) mediante laser ad eccimeri, femtolaser e impianto di lenti intraoculari per difetti refrattivi elevati."
     - title: "Iniezioni Intravitreali"
       description: "Somministrazione intravitreale di farmaci anti-VEGF e corticosteroidi per il trattamento della degenerazione maculare senile, dell'edema maculare diabetico e delle occlusioni venose retiniche."
     - title: "Chirurgia del Glaucoma"
@@ -74,15 +90,56 @@ it:
     - title: "Trattamenti Laser"
       description: "Fotocoagulazione laser argon per rotture retiniche e retinopatia diabetica. Laser YAG per capsulotomia posteriore e iridotomia. Laser selettivo (SLT) per il glaucoma."
 
-  clinics_title: "Dove Visito"
-  clinics_subtitle: "Il Dr. Serra riceve presso i seguenti ambulatori privati"
+  research_title: "Pubblicazioni e Ricerca"
+  research_subtitle: "Attività scientifica presentata a congressi internazionali e pubblicata su riviste peer-reviewed."
+  research_publications:
+    - authors: "Milano G, Serra U, Maceri C, Tiso C, Scatassi I"
+      title: "Morphometric parameters of laser scanning tomograph (HRT-II) and scanning laser polarimetry (GDx-VCC) to discriminate between normal and glaucomatous eyes"
+      venue: "Congresso EVER, Vilamoura, Portogallo"
+      year: "2005"
+      journal: "Ophthalmic Research 2005; Vol. 37, Suppl. 1"
+      type: "poster"
+    - authors: "Milano G, Maceri C, Bordin M, Serra U, Tiso C"
+      title: "Automated perimetry and laser polarimetry in the assessment of nerve fibers involvement in pituitary adenoma"
+      venue: "Congresso EVER, Vilamoura"
+      year: "2006"
+      journal: "Acta Ophthalmologica 2006; Vol. 84, Suppl. 239"
+      type: "oral"
+    - authors: "Milano G, Bossolesi L, Maceri C, Colombo M, Bordin M, Serra U"
+      title: "SITA-SWAP in glaucoma diagnosis"
+      venue: "Congresso EVER, Portoroz, Slovenia"
+      year: "2007"
+      journal: "Acta Ophthalmologica 2007; Vol. 85, Suppl. 240"
+      type: "oral"
+    - authors: "Serra U, Arnone R, Vandelli G, Ruberto G"
+      title: "20G and 25G Macular Surgery: Anatomic and Functional Results"
+      venue: "Congresso ARVO, Fort Lauderdale, USA"
+      year: "2008"
+      journal: ""
+      type: "poster"
+    - authors: "Serra U, Julián K, Aknin C, Cassoux N, Fardeau C, Paris L, LeHoang P, Bodaghi B"
+      title: "Ocular Toxoplasmosis Recurrences: A Single Center Experience"
+      venue: "Congresso ARVO, Fort Lauderdale, USA"
+      year: "2010"
+      journal: ""
+      type: "poster"
+  research_type_poster: "Poster"
+  research_type_oral: "Presentazione orale"
+  research_humanitarian_title: "Attività Umanitaria"
+  research_humanitarian_text: >
+    Dal 2013 il Dott. Serra collabora con i Medici Volontari Italiani (MVI),
+    partecipando a missioni chirurgiche umanitarie in Madagascar e Libia,
+    portando competenze oftalmologiche avanzate in contesti con accesso limitato alle cure oculistiche.
+
+  clinics_title: "Dove Visita"
+  clinics_subtitle: "Il Dott. Serra riceve presso i seguenti ambulatori"
   clinics_address: "Indirizzo"
   clinics_phone: "Telefono"
   clinics_email: "Email"
   clinics_hours: "Orari"
   clinics_book: "Prenota"
 
-  footer_text: "© 2026 Dr. Umberto Serra — Medico Chirurgo Specialista in Oftalmologia"
+  footer_text: "© 2026 Dott. Umberto Serra — Medico Chirurgo Specialista in Oftalmologia"
   footer_disclaimer: "Le informazioni contenute in questo sito hanno scopo puramente informativo e non sostituiscono in alcun modo il parere del medico."
 
 fr:
@@ -91,33 +148,47 @@ fr:
   nav_about: "Le Docteur"
   nav_surgery: "Chirurgie"
   nav_services: "Consultations"
+  nav_research: "Publications"
   nav_clinics: "Cabinets"
   lang_switch: "IT"
   lang_switch_label: "Italiano"
 
   hero_title: "Dr. Umberto Serra"
   hero_subtitle: "Médecin Chirurgien Spécialiste en Ophtalmologie"
-  hero_description: "Diagnostic, traitement médical et chirurgie des pathologies oculaires avec une approche attentive et personnalisée pour chaque patient."
+  hero_description: "Chirurgie vitréo-rétinienne, chirurgie de la cataracte et traitement des pathologies oculaires. Plus de 6 000 interventions réalisées avec des techniques microchirurgicales de dernière génération."
   hero_cta: "Prendre rendez-vous"
   hero_surgery_cta: "Activité Chirurgicale"
 
-  about_title: "Le Docteur"
+  about_title: "Dr. Umberto Serra"
   about_p1: >
-    Le Dr. Umberto Serra est Médecin Chirurgien Spécialiste en Ophtalmologie, avec une
-    formation acquise dans des centres d'excellence italiens et internationaux. Sa pratique
-    clinique repose sur une mise à jour scientifique constante et l'utilisation des technologies
-    diagnostiques et chirurgicales les plus avancées.
+    Le Dr. Umberto Serra est <strong>Médecin Chirurgien Spécialiste en Ophtalmologie</strong>.
+    Diplômé en Médecine et Chirurgie de l'<strong>Université de Pavie</strong> en 2003,
+    il a obtenu sa Spécialisation en Ophtalmologie dans la même université en 2008,
+    ainsi que le Diplôme de l'<strong>European Board of Ophthalmology</strong> à Paris la même année.
   about_p2: >
-    L'approche du Dr. Serra est orientée vers l'écoute du patient et la définition de
-    parcours thérapeutiques personnalisés, du diagnostic à la réhabilitation visuelle,
-    garantissant le plus grand soin à chaque étape du traitement.
-  about_experience_title: "Formation et Compétences"
-  about_experience:
-    - "Diplôme de Médecine et Chirurgie"
-    - "Spécialisation en Ophtalmologie"
-    - "Chirurgie du segment antérieur et postérieur"
-    - "Diagnostic instrumental avancé"
-    - "Traitements laser rétiniens et du glaucome"
+    En 2016, il a complété le <strong>Diplôme Interuniversitaire en Pathologie Rétinienne</strong>
+    aux Universités de Paris, Dijon et Bordeaux, et en 2018 il a effectué un
+    fellowship en <strong>Chirurgie Vitréo-Rétinienne</strong> au <strong>Roski Eye Institute</strong>
+    de l'University of Southern California à Los Angeles.
+  about_p3: >
+    De 2010 à 2024, il a exercé en tant que Médecin Hospitalier dans des structures
+    hospitalières piémontaises, dont l'<strong>Hôpital Ophtalmique de Turin</strong> à partir de 2013.
+    Il a réalisé plus de <strong>6 000 interventions chirurgicales</strong>. Depuis 2013, il collabore
+    avec les <strong>Médecins Volontaires Italiens</strong>, participant à des missions humanitaires
+    à Madagascar et en Libye.
+  about_education_title: "Formation"
+  about_education:
+    - "Diplôme de Médecine et Chirurgie — Université de Pavie (2003)"
+    - "Spécialisation en Ophtalmologie — Université de Pavie (2008)"
+    - "European Board of Ophthalmology — Paris (2008)"
+    - "Diplôme en Pathologie Rétinienne — Universités de Paris-Dijon-Bordeaux (2016)"
+    - "Fellowship Chirurgie Vitréo-Rétinienne — Roski Eye Institute, USC Los Angeles (2018)"
+  about_languages_title: "Le docteur consulte en"
+  about_languages:
+    - "Italien"
+    - "Anglais"
+    - "Français"
+    - "Portugais"
 
   services_title: "Consultations Spécialisées"
   services_subtitle: "L'activité ambulatoire comprend des consultations ophtalmologiques complètes et des examens diagnostiques ciblés."
@@ -142,19 +213,22 @@ fr:
       icon: "child"
 
   surgery_title: "Activité Chirurgicale"
-  surgery_subtitle: "Le Dr. Serra réalise des interventions de chirurgie oculaire avec des techniques microchirurgicales de dernière génération."
+  surgery_subtitle: "Plus de 6 000 interventions réalisées avec des techniques microchirurgicales de dernière génération."
   surgery_intro: >
     L'activité chirurgicale du Dr. Serra se concentre sur la chirurgie de l'œil interne,
     avec une compétence particulière en chirurgie vitréo-rétinienne et en chirurgie de la
-    cataracte. Chaque intervention est planifiée de manière rigoureuse en fonction des
-    caractéristiques individuelles du patient, avec l'objectif d'obtenir le meilleur
-    résultat fonctionnel possible.
+    cataracte. La formation internationale — du Roski Eye Institute de Los Angeles aux
+    universités françaises — garantit une approche actualisée aux techniques les plus avancées.
+    Chaque intervention est planifiée de manière rigoureuse en fonction des caractéristiques
+    individuelles du patient.
   surgery_procedures_title: "Principales interventions"
   surgery_procedures:
     - title: "Chirurgie Vitréo-Rétinienne"
       description: "Vitrectomie pour le traitement du décollement de rétine, de la membrane épirétinienne (pucker maculaire), du trou maculaire, des complications de la rétinopathie diabétique et des hémorragies du vitré."
     - title: "Chirurgie de la Cataracte"
-      description: "Phacoémulsification avec implantation de lentille intraoculaire, y compris lentilles toriques pour la correction de l'astigmatisme et lentilles multifocales pour la presbytie."
+      description: "Phacoémulsification avec implantation de lentille intraoculaire, y compris lentilles toriques pour la correction de l'astigmatisme et lentilles multifocales pour la presbytie. Gestion des cataractes compliquées."
+    - title: "Chirurgie Réfractive"
+      description: "Correction des défauts visuels (myopie, hypermétropie, astigmatisme, presbytie) par laser excimer, femtolaser et implantation de lentilles intraoculaires pour les défauts réfractifs élevés."
     - title: "Injections Intravitréennes"
       description: "Administration intravitréenne de médicaments anti-VEGF et corticostéroïdes pour le traitement de la dégénérescence maculaire liée à l'âge, de l'œdème maculaire diabétique et des occlusions veineuses rétiniennes."
     - title: "Chirurgie du Glaucome"
@@ -162,8 +236,50 @@ fr:
     - title: "Traitements Laser"
       description: "Photocoagulation laser argon pour déchirures rétiniennes et rétinopathie diabétique. Laser YAG pour capsulotomie postérieure et iridotomie. Laser sélectif (SLT) pour le glaucome."
 
+  research_title: "Publications et Recherche"
+  research_subtitle: "Activité scientifique présentée lors de congrès internationaux et publiée dans des revues à comité de lecture."
+  research_publications:
+    - authors: "Milano G, Serra U, Maceri C, Tiso C, Scatassi I"
+      title: "Morphometric parameters of laser scanning tomograph (HRT-II) and scanning laser polarimetry (GDx-VCC) to discriminate between normal and glaucomatous eyes"
+      venue: "Congrès EVER, Vilamoura, Portugal"
+      year: "2005"
+      journal: "Ophthalmic Research 2005; Vol. 37, Suppl. 1"
+      type: "poster"
+    - authors: "Milano G, Maceri C, Bordin M, Serra U, Tiso C"
+      title: "Automated perimetry and laser polarimetry in the assessment of nerve fibers involvement in pituitary adenoma"
+      venue: "Congrès EVER, Vilamoura"
+      year: "2006"
+      journal: "Acta Ophthalmologica 2006; Vol. 84, Suppl. 239"
+      type: "oral"
+    - authors: "Milano G, Bossolesi L, Maceri C, Colombo M, Bordin M, Serra U"
+      title: "SITA-SWAP in glaucoma diagnosis"
+      venue: "Congrès EVER, Portoroz, Slovénie"
+      year: "2007"
+      journal: "Acta Ophthalmologica 2007; Vol. 85, Suppl. 240"
+      type: "oral"
+    - authors: "Serra U, Arnone R, Vandelli G, Ruberto G"
+      title: "20G and 25G Macular Surgery: Anatomic and Functional Results"
+      venue: "Congrès ARVO, Fort Lauderdale, USA"
+      year: "2008"
+      journal: ""
+      type: "poster"
+    - authors: "Serra U, Julián K, Aknin C, Cassoux N, Fardeau C, Paris L, LeHoang P, Bodaghi B"
+      title: "Ocular Toxoplasmosis Recurrences: A Single Center Experience"
+      venue: "Congrès ARVO, Fort Lauderdale, USA"
+      year: "2010"
+      journal: ""
+      type: "poster"
+  research_type_poster: "Poster"
+  research_type_oral: "Présentation orale"
+  research_humanitarian_title: "Activité Humanitaire"
+  research_humanitarian_text: >
+    Depuis 2013, le Dr. Serra collabore avec les Médecins Volontaires Italiens (MVI),
+    participant à des missions chirurgicales humanitaires à Madagascar et en Libye,
+    apportant des compétences ophtalmologiques avancées dans des contextes à accès limité
+    aux soins oculistiques.
+
   clinics_title: "Cabinets"
-  clinics_subtitle: "Le Dr. Serra reçoit dans les cabinets privés suivants"
+  clinics_subtitle: "Le Dr. Serra reçoit dans les établissements suivants"
   clinics_address: "Adresse"
   clinics_phone: "Téléphone"
   clinics_email: "Email"

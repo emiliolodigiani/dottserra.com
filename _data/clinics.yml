@@ -1,35 +1,51 @@
 - city:
     it: "Torino"
     fr: "Turin"
+  country: it
   clinics:
-    - name: "Centro Oculistico San Paolo"
-      address: "Corso Vittorio Emanuele II 68, 10121 Torino"
-      phone: "+39 011 1234567"
-      email: "torino@example.com"
-      hours:
-        it: "Lunedì e Mercoledì, 9:00 - 13:00"
-        fr: "Lundi et Mercredi, 9h00 - 13h00"
+    - name: "Clinica Baviera"
+      address: "Piazza Solferino 7/i, 10121 Torino"
+      phone: ""
+      url: "https://www.clinicabaviera.it/dottor-umberto-serra"
+    - name: "Clinica Sedes Sapientiae (Humanitas)"
+      address: "Via G. Bidone 31, 10125 Torino"
+      phone: "011 5574574"
+      url: "https://www.clinicasedes.it/medici/serra-umberto/"
+    - name: "Poliambulatorio Kormed Statuto"
+      address: "Torino"
+      phone: ""
+      url: "https://www.kormed.it/medici/serra-umberto/"
+    - name: "Affidea CDC"
+      address: "Corso Galileo Ferraris 36, 10128 Torino"
+      phone: "011 5513444"
+      url: "https://www.gruppocdc.it/medici/dott-serra-umberto"
 
 - city:
     it: "Asti"
     fr: "Asti"
+  country: it
   clinics:
-    - name: "Poliambulatorio Città di Asti"
-      address: "Via Cavour 32, 14100 Asti"
-      phone: "+39 0141 987654"
-      email: "asti@example.com"
-      hours:
-        it: "Martedì e Giovedì, 14:00 - 18:00"
-        fr: "Mardi et Jeudi, 14h00 - 18h00"
+    - name: "Affidea CDC"
+      address: "Via Gabotto 4, 14100 Asti"
+      phone: "011 5513444"
+      url: "https://www.gruppocdc.it/medici/dott-serra-umberto"
 
 - city:
-    it: "Nizza"
-    fr: "Nice"
+    it: "Alessandria"
+    fr: "Alexandrie"
+  country: it
   clinics:
-    - name: "Cabinet d'Ophtalmologie Saint-Roch"
-      address: "12 Rue de France, 06000 Nice"
-      phone: "+33 4 93 12 34 56"
-      email: "nice@example.com"
-      hours:
-        it: "Venerdì, 9:00 - 17:00"
-        fr: "Vendredi, 9h00 - 17h00"
+    - name: "Affidea CDC"
+      address: "Corso Cento Cannoni 8, 15121 Alessandria"
+      phone: "011 5513444"
+      url: "https://www.gruppocdc.it/medici/dott-serra-umberto"
+
+- city:
+    it: "Francia (segnaposto)"
+    fr: "France (à confirmer)"
+  country: fr
+  clinics:
+    - name: "Cabinet à définir"
+      address: "À confirmer"
+      phone: ""
+      url: ""
