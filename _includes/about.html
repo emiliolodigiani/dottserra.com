@@ -2,11 +2,21 @@
 
 <section id="about" class="py-20 sm:py-28 bg-white">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+    <div class="grid md:grid-cols-5 gap-12 md:gap-16 items-start">
 
-      <!-- Photo column with decorative frame -->
-      <div class="lg:col-span-2 fade-in">
-        <div class="relative">
+      <!-- Photo column -->
+      <div class="md:col-span-2 fade-in">
+        <!-- Mobile: circle crop showing face -->
+        <div class="md:hidden flex justify-center">
+          <div class="w-3/5 sm:w-3/5 max-w-80 aspect-square rounded-full overflow-hidden bg-primary-100 shadow-xl ring-4 ring-primary-100">
+            <img src="{{ '/assets/img/dr-serra.jpg' | relative_url }}"
+                 alt="{{ t.site_title }}"
+                 class="w-full h-full object-cover object-top"
+                 loading="lazy">
+          </div>
+        </div>
+        <!-- Tablet/Desktop: rectangular portrait with decorative frame -->
+        <div class="hidden md:block relative">
           <div class="absolute -inset-3 border border-primary-200/60 rounded-2xl"></div>
           <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-primary-100 shadow-xl">
             <img src="{{ '/assets/img/dr-serra.jpg' | relative_url }}"
@@ -19,7 +29,7 @@
       </div>
 
       <!-- Text column -->
-      <div class="lg:col-span-3 fade-in">
+      <div class="md:col-span-3 fade-in">
         <div class="flex items-center gap-3 mb-3">
           <div class="w-8 h-0.5 bg-accent-500"></div>
           <p class="text-primary-600 text-sm font-semibold tracking-widest uppercase">{{ t.nav_about }}</p>
