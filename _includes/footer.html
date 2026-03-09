@@ -1,19 +1,24 @@
 {% assign t = site.data.i18n[page.lang] %}
+{% if page.lang == 'fr' %}
+  {% assign home_url = '/fr/' | relative_url %}
+{% else %}
+  {% assign home_url = '/' | relative_url %}
+{% endif %}
 
 <footer class="bg-primary-950 border-t border-primary-800/30">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
     <!-- Nav links -->
     <div class="flex flex-wrap items-center justify-center gap-6 mb-8 text-sm">
-      <a href="#about" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_about }}</a>
+      <a href="{{ home_url }}#about" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_about }}</a>
       <span class="w-1 h-1 rounded-full bg-primary-700"></span>
-      <a href="#services" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_services }}</a>
+      <a href="{{ home_url }}#services" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_services }}</a>
       <span class="w-1 h-1 rounded-full bg-primary-700"></span>
-      <a href="#surgery" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_surgery }}</a>
+      <a href="{{ home_url }}#surgery" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_surgery }}</a>
       <span class="w-1 h-1 rounded-full bg-primary-700"></span>
-      <a href="#research" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_research }}</a>
+      <a href="{{ home_url }}#research" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_research }}</a>
       <span class="w-1 h-1 rounded-full bg-primary-700"></span>
-      <a href="#clinics" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_clinics }}</a>
+      <a href="{{ home_url }}#clinics" class="text-primary-300/60 hover:text-white transition-colors">{{ t.nav_clinics }}</a>
     </div>
 
     <div class="w-12 h-0.5 bg-accent-700/50 mx-auto mb-8"></div>
@@ -21,6 +26,7 @@
     <div class="text-center space-y-3">
       <p class="font-display text-lg font-bold text-white">{{ t.site_title }}</p>
       <p class="text-sm text-primary-300/50">{{ t.footer_text }}</p>
+      <p class="text-xs text-primary-400/30">P.IVA: {{ site.data.legal.titolare.partita_iva }} — {{ site.data.legal.titolare.ordine_medici }}</p>
       <p class="text-xs text-primary-400/30 max-w-xl mx-auto leading-relaxed pt-2">{{ t.footer_disclaimer }}</p>
     </div>
 

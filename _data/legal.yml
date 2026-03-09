@@ -1,0 +1,5 @@
+titolare:
+  nome: "[NOME E COGNOME]"
+  partita_iva: "[PARTITA IVA]"
+  ordine_medici: "Ordine dei Medici di [PROVINCIA] N. [NUMERO]"
+  email: "[EMAIL]"

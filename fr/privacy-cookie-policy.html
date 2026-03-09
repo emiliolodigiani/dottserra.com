@@ -1,0 +1,190 @@
+---
+layout: default
+lang: fr
+permalink: /fr/privacy-cookie-policy
+---
+
+{% assign t = site.data.i18n[page.lang] %}
+{% assign leg = site.data.legal.titolare %}
+
+<section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-3xl mx-auto prose prose-gray">
+
+    <h1 class="font-display text-3xl font-bold text-primary-900 mb-8">Privacy e Cookie Policy</h1>
+
+    <p class="text-gray-600 leading-relaxed">
+      Informations sur le traitement des données personnelles conformément aux articles 13 et 14 du
+      Règlement (UE) 2016/679 (RGPD) et de la législation italienne en vigueur.
+    </p>
+
+    <!-- ===================== PRIVACY POLICY ===================== -->
+
+    <h2 class="font-display text-xl font-bold text-primary-900 mt-10 mb-4">1. Responsable du traitement</h2>
+    <p class="text-gray-600 leading-relaxed">
+      Le Responsable du traitement des données est :<br>
+      <strong>{{ leg.nome }}</strong> — TVA : {{ leg.partita_iva }}<br>
+      Email : <a href="mailto:{{ leg.email }}" class="text-primary-700 underline">{{ leg.email }}</a>
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-primary-900 mt-10 mb-4">2. Données traitées et finalités</h2>
+    <p class="text-gray-600 leading-relaxed">
+      Ce site web a un caractère informatif et ne nécessite ni inscription de l'utilisateur ni
+      remplissage de formulaires de contact. Les données personnelles traitées se limitent à :
+    </p>
+    <ul class="text-gray-600 leading-relaxed list-disc pl-6 space-y-2 mt-3">
+      <li><strong>Données de navigation</strong> — informations techniques collectées automatiquement
+        par les systèmes informatiques (adresse IP, type de navigateur, système d'exploitation,
+        pages visitées, horaires d'accès). Ces données sont nécessaires au fonctionnement du site
+        et sont utilisées uniquement pour des statistiques anonymes.</li>
+      <li><strong>Cookies</strong> — petits fichiers texte enregistrés sur l'appareil de l'utilisateur,
+        décrits en détail dans la section Cookie Policy de cette page.</li>
+    </ul>
+
+    <h2 class="font-display text-xl font-bold text-primary-900 mt-10 mb-4">3. Base juridique du traitement</h2>
+    <ul class="text-gray-600 leading-relaxed list-disc pl-6 space-y-2">
+      <li><strong>Intérêt légitime</strong> (art. 6.1.f RGPD) — pour les cookies techniques nécessaires
+        au fonctionnement du site et pour les données de navigation.</li>
+      <li><strong>Consentement</strong> (art. 6.1.a RGPD) — pour les cookies statistiques (Google Analytics),
+        activés uniquement après acceptation explicite de l'utilisateur via la bannière de cookies.</li>
+    </ul>
+
+    <h2 class="font-display text-xl font-bold text-primary-900 mt-10 mb-4">4. Destinataires des données</h2>
+    <p class="text-gray-600 leading-relaxed">
+      Les données personnelles ne sont ni vendues ni cédées à des tiers. Elles peuvent être communiquées à :
+    </p>
+    <ul class="text-gray-600 leading-relaxed list-disc pl-6 space-y-2 mt-3">
+      <li><strong>Google LLC</strong> — pour le service Google Analytics (uniquement avec consentement) et
+        Google Fonts (chargement des polices). Google agit en tant que sous-traitant au sens de
+        l'art. 28 RGPD. Les données peuvent être transférées aux États-Unis conformément au
+        EU-US Data Privacy Framework.</li>
+      <li><strong>Fournisseur d'hébergement</strong> — le fournisseur hébergeant le site peut collecter
+        des données techniques (ex. adresse IP) dans ses propres journaux d'accès à des fins de
+        sécurité et opérationnelles.</li>
+    </ul>
+
+    <h2 class="font-display text-xl font-bold text-primary-900 mt-10 mb-4">5. Conservation des données</h2>
+    <p class="text-gray-600 leading-relaxed">
+      Les données de navigation sont conservées pendant le temps strictement nécessaire à la
+      gestion technique du site. Les cookies ont les durées indiquées dans la section Cookie Policy.
+      Les données statistiques agrégées peuvent être conservées indéfiniment car entièrement
+      anonymisées.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-primary-900 mt-10 mb-4">6. Droits de la personne concernée</h2>
+    <p class="text-gray-600 leading-relaxed">
+      Conformément aux articles 15 à 22 du RGPD, l'utilisateur a le droit de :
+    </p>
+    <ul class="text-gray-600 leading-relaxed list-disc pl-6 space-y-2 mt-3">
+      <li>Accéder à ses données personnelles et en obtenir une copie</li>
+      <li>Rectifier des données inexactes ou incomplètes</li>
+      <li>Effacer ses données (« droit à l'oubli »)</li>
+      <li>Limiter le traitement</li>
+      <li>S'opposer au traitement</li>
+      <li>Demander la portabilité des données</li>
+      <li>Retirer son consentement à tout moment, sans porter atteinte à la licéité du
+        traitement fondé sur le consentement donné avant son retrait</li>
+    </ul>
+    <p class="text-gray-600 leading-relaxed mt-3">
+      Pour exercer ses droits, il est possible de contacter le Responsable à l'adresse email
+      <a href="mailto:{{ leg.email }}" class="text-primary-700 underline">{{ leg.email }}</a>.
+    </p>
+    <p class="text-gray-600 leading-relaxed mt-3">
+      L'utilisateur a également le droit d'introduire une réclamation auprès de l'autorité de
+      contrôle compétente (Garante per la Protezione dei Dati Personali —
+      <a href="https://www.garanteprivacy.it" class="text-primary-700 underline" target="_blank" rel="noopener">www.garanteprivacy.it</a>).
+    </p>
+
+    <!-- ===================== COOKIE POLICY ===================== -->
+
+    <h2 class="font-display text-xl font-bold text-primary-900 mt-14 mb-4">7. Cookie Policy</h2>
+
+    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Qu'est-ce qu'un cookie</h3>
+    <p class="text-gray-600 leading-relaxed">
+      Les cookies sont de petits fichiers texte que les sites web enregistrent sur l'appareil de
+      l'utilisateur. Ils servent à mémoriser les préférences, améliorer l'expérience de navigation
+      et recueillir des informations agrégées sur l'utilisation du site.
+    </p>
+
+    <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Cookies techniques (nécessaires)</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Ces cookies sont essentiels au fonctionnement du site et ne peuvent pas être désactivés.
+    </p>
+
+    <div class="overflow-x-auto mb-6">
+      <table class="w-full text-sm text-left border border-gray-200 rounded-lg">
+        <thead class="bg-gray-50 text-gray-700">
+          <tr>
+            <th class="px-4 py-3 font-medium">Cookie</th>
+            <th class="px-4 py-3 font-medium">Finalité</th>
+            <th class="px-4 py-3 font-medium">Durée</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-600">
+          <tr class="border-t border-gray-100">
+            <td class="px-4 py-3 font-mono text-xs">cookie_consent</td>
+            <td class="px-4 py-3">Mémorise les préférences cookies de l'utilisateur</td>
+            <td class="px-4 py-3">1 an</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Cookies statistiques</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Ces cookies ne sont activés qu'avec le consentement de l'utilisateur et permettent de
+      recueillir des statistiques anonymes sur la navigation via Google Analytics, afin
+      d'améliorer le site. Les données collectées sont anonymes et agrégées ; elles ne sont
+      pas utilisées pour identifier les utilisateurs.
+    </p>
+
+    <div class="overflow-x-auto mb-6">
+      <table class="w-full text-sm text-left border border-gray-200 rounded-lg">
+        <thead class="bg-gray-50 text-gray-700">
+          <tr>
+            <th class="px-4 py-3 font-medium">Cookie</th>
+            <th class="px-4 py-3 font-medium">Finalité</th>
+            <th class="px-4 py-3 font-medium">Durée</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-600">
+          <tr class="border-t border-gray-100">
+            <td class="px-4 py-3 font-mono text-xs">_ga</td>
+            <td class="px-4 py-3">Distingue les utilisateurs de manière anonyme (Google Analytics)</td>
+            <td class="px-4 py-3">2 ans</td>
+          </tr>
+          <tr class="border-t border-gray-100">
+            <td class="px-4 py-3 font-mono text-xs">_ga_*</td>
+            <td class="px-4 py-3">Maintient l'état de la session (Google Analytics)</td>
+            <td class="px-4 py-3">2 ans</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Services tiers</h3>
+
+    <p class="text-gray-600 leading-relaxed mt-4">
+      <strong>Google Fonts</strong> — Le site utilise Google Fonts pour le chargement des polices de
+      caractères. Le navigateur de l'utilisateur se connecte aux serveurs de Google pour télécharger
+      les polices nécessaires. Google peut collecter l'adresse IP de l'utilisateur et des informations
+      techniques sur le navigateur. Pour plus d'informations :
+      <a href="https://policies.google.com/privacy" class="text-primary-700 underline" target="_blank" rel="noopener">Politique de confidentialité de Google</a>.
+    </p>
+
+    <p class="text-gray-600 leading-relaxed mt-4">
+      <strong>Google Analytics</strong> — N'est activé qu'avec le consentement préalable de l'utilisateur.
+      Les données sont collectées de manière anonyme avec l'option d'anonymisation de l'IP activée.
+      Pour plus d'informations :
+      <a href="https://policies.google.com/privacy" class="text-primary-700 underline" target="_blank" rel="noopener">Politique de confidentialité de Google</a>.
+    </p>
+
+    <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Gestion des préférences</h3>
+    <p class="text-gray-600 leading-relaxed">
+      Vous pouvez modifier vos préférences à tout moment en cliquant sur
+      <button onclick="window.dispatchEvent(new Event('open-cookie-banner'))" class="text-primary-700 underline cursor-pointer">"Gestion des cookies"</button>
+      dans le pied de page du site, ou en supprimant les cookies de votre navigateur.
+    </p>
+
+    <p class="text-gray-500 text-xs mt-10">Dernière mise à jour : mars 2026</p>
+  </div>
+</section>

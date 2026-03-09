@@ -1,8 +1,10 @@
 {% assign t = site.data.i18n[page.lang] %}
 {% if page.lang == 'it' %}
   {% assign switch_url = '/fr/' | relative_url %}
+  {% assign home_url = '/' | relative_url %}
 {% else %}
   {% assign switch_url = '/' | relative_url %}
+  {% assign home_url = '/fr/' | relative_url %}
 {% endif %}
 
 <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200/60">
@@ -13,11 +15,11 @@
     </a>
 
     <div class="hidden lg:flex items-center gap-8">
-      <a href="#about" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_about }}</a>
-      <a href="#services" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_services }}</a>
-      <a href="#surgery" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_surgery }}</a>
-      <a href="#research" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_research }}</a>
-      <a href="#clinics" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_clinics }}</a>
+      <a href="{{ home_url }}#about" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_about }}</a>
+      <a href="{{ home_url }}#services" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_services }}</a>
+      <a href="{{ home_url }}#surgery" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_surgery }}</a>
+      <a href="{{ home_url }}#research" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_research }}</a>
+      <a href="{{ home_url }}#clinics" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_clinics }}</a>
       <span class="w-px h-5 bg-gray-300"></span>
       <a href="{{ switch_url }}" class="text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded border border-gray-300 text-gray-500 hover:text-primary-700 hover:border-primary-300 transition-colors">
         {{ t.lang_switch }}
@@ -38,11 +40,11 @@
 
   <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200/60 bg-white">
     <div class="px-4 py-4 space-y-1">
-      <a href="#about" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_about }}</a>
-      <a href="#services" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_services }}</a>
-      <a href="#surgery" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_surgery }}</a>
-      <a href="#research" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_research }}</a>
-      <a href="#clinics" class="block text-sm font-medium text-gray-600 py-2.5">{{ t.nav_clinics }}</a>
+      <a href="{{ home_url }}#about" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_about }}</a>
+      <a href="{{ home_url }}#services" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_services }}</a>
+      <a href="{{ home_url }}#surgery" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_surgery }}</a>
+      <a href="{{ home_url }}#research" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_research }}</a>
+      <a href="{{ home_url }}#clinics" class="block text-sm font-medium text-gray-600 py-2.5">{{ t.nav_clinics }}</a>
     </div>
   </div>
 </header>

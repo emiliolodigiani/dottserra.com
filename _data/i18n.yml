@@ -140,8 +140,8 @@ it:
   clinics_book: "Prenota"
 
   cookie_text: "Questo sito utilizza cookie tecnici necessari al funzionamento. Puoi anche attivare cookie per le statistiche anonime."
-  cookie_policy_link: "Cookie Policy"
-  cookie_policy_url: "/cookie-policy"
+  cookie_policy_link: "Privacy e Cookie Policy"
+  cookie_policy_url: "/privacy-cookie-policy"
   cookie_accept_all: "Accetta tutti"
   cookie_necessary_only: "Solo necessari"
   cookie_customize: "Personalizza"
@@ -302,8 +302,8 @@ fr:
   clinics_book: "Réserver"
 
   cookie_text: "Ce site utilise des cookies techniques nécessaires à son fonctionnement. Vous pouvez également activer les cookies pour les statistiques anonymes."
-  cookie_policy_link: "Politique des cookies"
-  cookie_policy_url: "/fr/cookie-policy"
+  cookie_policy_link: "Privacy e Cookie Policy"
+  cookie_policy_url: "/fr/privacy-cookie-policy"
   cookie_accept_all: "Tout accepter"
   cookie_necessary_only: "Nécessaires uniquement"
   cookie_customize: "Personnaliser"
