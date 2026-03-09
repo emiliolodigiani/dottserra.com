@@ -1,0 +1,62 @@
+{% assign t = site.data.i18n[page.lang] %}
+{% if page.lang == 'it' %}
+  {% assign switch_url = '/fr/' %}
+{% else %}
+  {% assign switch_url = '/' %}
+{% endif %}
+
+<!-- Top bar -->
+<div class="fixed top-0 w-full z-50 bg-primary-950 text-primary-300/80 text-xs tracking-wide hidden sm:block">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-8">
+    <span>{{ t.site_subtitle }}</span>
+    <a href="{{ switch_url }}" class="font-semibold tracking-wider uppercase text-primary-400 hover:text-white transition-colors">
+      {{ t.lang_switch_label }}
+    </a>
+  </div>
+</div>
+
+<header class="fixed top-0 sm:top-8 w-full bg-white/95 backdrop-blur-sm z-40 border-b border-gray-200/60">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 lg:h-18">
+    <a href="{% if page.lang == 'fr' %}/fr/{% else %}/{% endif %}" class="font-display text-xl font-bold text-primary-900 tracking-tight">
+      Dr. Umberto Serra
+    </a>
+
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#about" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_about }}</a>
+      <a href="#services" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_services }}</a>
+      <a href="#surgery" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_surgery }}</a>
+      <a href="#clinics" class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">{{ t.nav_clinics }}</a>
+    </div>
+
+    <div class="lg:hidden flex items-center gap-3">
+      <a href="{{ switch_url }}" class="text-xs font-semibold tracking-wider uppercase px-2.5 py-1 rounded border border-gray-300 text-gray-500">
+        {{ t.lang_switch }}
+      </a>
+      <button id="mobile-menu-btn" class="text-gray-500 p-1" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200/60 bg-white">
+    <div class="px-4 py-4 space-y-1">
+      <a href="#about" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_about }}</a>
+      <a href="#services" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_services }}</a>
+      <a href="#surgery" class="block text-sm font-medium text-gray-600 py-2.5 border-b border-gray-100">{{ t.nav_surgery }}</a>
+      <a href="#clinics" class="block text-sm font-medium text-gray-600 py-2.5">{{ t.nav_clinics }}</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+  });
+</script>

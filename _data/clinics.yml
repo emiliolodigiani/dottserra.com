@@ -1,0 +1,35 @@
+- city:
+    it: "Torino"
+    fr: "Turin"
+  clinics:
+    - name: "Centro Oculistico San Paolo"
+      address: "Corso Vittorio Emanuele II 68, 10121 Torino"
+      phone: "+39 011 1234567"
+      email: "torino@example.com"
+      hours:
+        it: "Lunedì e Mercoledì, 9:00 - 13:00"
+        fr: "Lundi et Mercredi, 9h00 - 13h00"
+
+- city:
+    it: "Asti"
+    fr: "Asti"
+  clinics:
+    - name: "Poliambulatorio Città di Asti"
+      address: "Via Cavour 32, 14100 Asti"
+      phone: "+39 0141 987654"
+      email: "asti@example.com"
+      hours:
+        it: "Martedì e Giovedì, 14:00 - 18:00"
+        fr: "Mardi et Jeudi, 14h00 - 18h00"
+
+- city:
+    it: "Nizza"
+    fr: "Nice"
+  clinics:
+    - name: "Cabinet d'Ophtalmologie Saint-Roch"
+      address: "12 Rue de France, 06000 Nice"
+      phone: "+33 4 93 12 34 56"
+      email: "nice@example.com"
+      hours:
+        it: "Venerdì, 9:00 - 17:00"
+        fr: "Vendredi, 9h00 - 17h00"

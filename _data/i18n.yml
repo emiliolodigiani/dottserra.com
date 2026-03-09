@@ -1,0 +1,174 @@
+it:
+  site_title: "Dr. Umberto Serra"
+  site_subtitle: "Medico Chirurgo Specialista in Oftalmologia"
+  nav_about: "Il Dottore"
+  nav_surgery: "Chirurgia"
+  nav_services: "Visite"
+  nav_clinics: "Dove Visito"
+  lang_switch: "FR"
+  lang_switch_label: "Français"
+
+  hero_title: "Dr. Umberto Serra"
+  hero_subtitle: "Medico Chirurgo Specialista in Oftalmologia"
+  hero_description: "Diagnosi, terapia medica e chirurgia delle patologie oculari con un approccio attento e personalizzato per ogni paziente."
+  hero_cta: "Prenota una visita"
+  hero_surgery_cta: "Attività Chirurgica"
+
+  about_title: "Il Dottore"
+  about_p1: >
+    Il Dr. Umberto Serra è Medico Chirurgo Specialista in Oftalmologia, con una formazione
+    maturata presso centri di eccellenza italiani e internazionali. La sua pratica clinica
+    si fonda su un aggiornamento scientifico costante e sull'utilizzo delle tecnologie
+    diagnostiche e chirurgiche più avanzate.
+  about_p2: >
+    L'approccio del Dr. Serra è orientato all'ascolto del paziente e alla definizione di
+    percorsi terapeutici personalizzati, dalla diagnosi alla riabilitazione visiva,
+    garantendo la massima cura in ogni fase del trattamento.
+  about_experience_title: "Formazione e Competenze"
+  about_experience:
+    - "Laurea in Medicina e Chirurgia"
+    - "Specializzazione in Oftalmologia"
+    - "Chirurgia del segmento anteriore e posteriore"
+    - "Diagnostica strumentale avanzata"
+    - "Trattamenti laser retinici e del glaucoma"
+
+  services_title: "Visite Specialistiche"
+  services_subtitle: "L'attività ambulatoriale comprende visite oculistiche complete e approfondimenti diagnostici mirati."
+  services:
+    - title: "Visita Oculistica Completa"
+      description: "Valutazione approfondita della funzione visiva, esame del segmento anteriore e del fondo oculare, misurazione della pressione intraoculare e della refrazione."
+      icon: "eye"
+    - title: "Diagnostica Strumentale"
+      description: "OCT della retina e del nervo ottico, campo visivo computerizzato, topografia corneale, pachimetria e biometria oculare per un inquadramento diagnostico completo."
+      icon: "scan"
+    - title: "Patologie della Retina"
+      description: "Diagnosi e monitoraggio delle maculopatie, della retinopatia diabetica, delle occlusioni vascolari retiniche e delle degenerazioni retiniche periferiche."
+      icon: "retina"
+    - title: "Glaucoma"
+      description: "Screening, diagnosi e follow-up del glaucoma con tonometria, pachimetria, OCT delle fibre nervose e campo visivo. Definizione della terapia medica o indicazione chirurgica."
+      icon: "pressure"
+    - title: "Cataratta"
+      description: "Valutazione pre-operatoria completa, calcolo della lente intraoculare con biometria di ultima generazione e pianificazione dell'intervento chirurgico."
+      icon: "lens"
+    - title: "Oftalmologia Pediatrica"
+      description: "Screening visivo in età pediatrica, valutazione dello strabismo, dell'ambliopia e dei difetti refrattivi nel bambino."
+      icon: "child"
+
+  surgery_title: "Attività Chirurgica"
+  surgery_subtitle: "Il Dr. Serra esegue interventi di chirurgia oculare con tecniche microchirurgiche di ultima generazione."
+  surgery_intro: >
+    L'attività chirurgica del Dr. Serra si concentra sulla chirurgia dell'occhio interno,
+    con particolare competenza nella chirurgia vitreo-retinica e nella chirurgia della cataratta.
+    Ogni intervento viene pianificato in modo accurato sulla base delle caratteristiche
+    individuali del paziente, con l'obiettivo di ottenere il miglior risultato funzionale possibile.
+  surgery_procedures_title: "Principali interventi"
+  surgery_procedures:
+    - title: "Chirurgia Vitreo-Retinica"
+      description: "Vitrectomia per il trattamento del distacco di retina, della membrana epiretinica (pucker maculare), del foro maculare, delle complicanze della retinopatia diabetica e delle emorragie vitreali."
+    - title: "Chirurgia della Cataratta"
+      description: "Facoemulsificazione con impianto di lente intraoculare, incluse lenti toriche per la correzione dell'astigmatismo e lenti multifocali per la presbiopia."
+    - title: "Iniezioni Intravitreali"
+      description: "Somministrazione intravitreale di farmaci anti-VEGF e corticosteroidi per il trattamento della degenerazione maculare senile, dell'edema maculare diabetico e delle occlusioni venose retiniche."
+    - title: "Chirurgia del Glaucoma"
+      description: "Interventi filtranti e impianti drenanti per il controllo della pressione intraoculare nelle forme di glaucoma non controllate dalla terapia medica."
+    - title: "Trattamenti Laser"
+      description: "Fotocoagulazione laser argon per rotture retiniche e retinopatia diabetica. Laser YAG per capsulotomia posteriore e iridotomia. Laser selettivo (SLT) per il glaucoma."
+
+  clinics_title: "Dove Visito"
+  clinics_subtitle: "Il Dr. Serra riceve presso i seguenti ambulatori privati"
+  clinics_address: "Indirizzo"
+  clinics_phone: "Telefono"
+  clinics_email: "Email"
+  clinics_hours: "Orari"
+  clinics_book: "Prenota"
+
+  footer_text: "© 2026 Dr. Umberto Serra — Medico Chirurgo Specialista in Oftalmologia"
+  footer_disclaimer: "Le informazioni contenute in questo sito hanno scopo puramente informativo e non sostituiscono in alcun modo il parere del medico."
+
+fr:
+  site_title: "Dr. Umberto Serra"
+  site_subtitle: "Médecin Chirurgien Spécialiste en Ophtalmologie"
+  nav_about: "Le Docteur"
+  nav_surgery: "Chirurgie"
+  nav_services: "Consultations"
+  nav_clinics: "Cabinets"
+  lang_switch: "IT"
+  lang_switch_label: "Italiano"
+
+  hero_title: "Dr. Umberto Serra"
+  hero_subtitle: "Médecin Chirurgien Spécialiste en Ophtalmologie"
+  hero_description: "Diagnostic, traitement médical et chirurgie des pathologies oculaires avec une approche attentive et personnalisée pour chaque patient."
+  hero_cta: "Prendre rendez-vous"
+  hero_surgery_cta: "Activité Chirurgicale"
+
+  about_title: "Le Docteur"
+  about_p1: >
+    Le Dr. Umberto Serra est Médecin Chirurgien Spécialiste en Ophtalmologie, avec une
+    formation acquise dans des centres d'excellence italiens et internationaux. Sa pratique
+    clinique repose sur une mise à jour scientifique constante et l'utilisation des technologies
+    diagnostiques et chirurgicales les plus avancées.
+  about_p2: >
+    L'approche du Dr. Serra est orientée vers l'écoute du patient et la définition de
+    parcours thérapeutiques personnalisés, du diagnostic à la réhabilitation visuelle,
+    garantissant le plus grand soin à chaque étape du traitement.
+  about_experience_title: "Formation et Compétences"
+  about_experience:
+    - "Diplôme de Médecine et Chirurgie"
+    - "Spécialisation en Ophtalmologie"
+    - "Chirurgie du segment antérieur et postérieur"
+    - "Diagnostic instrumental avancé"
+    - "Traitements laser rétiniens et du glaucome"
+
+  services_title: "Consultations Spécialisées"
+  services_subtitle: "L'activité ambulatoire comprend des consultations ophtalmologiques complètes et des examens diagnostiques ciblés."
+  services:
+    - title: "Consultation Ophtalmologique Complète"
+      description: "Évaluation approfondie de la fonction visuelle, examen du segment antérieur et du fond d'œil, mesure de la pression intraoculaire et de la réfraction."
+      icon: "eye"
+    - title: "Diagnostic Instrumental"
+      description: "OCT de la rétine et du nerf optique, champ visuel informatisé, topographie cornéenne, pachymétrie et biométrie oculaire pour un bilan diagnostique complet."
+      icon: "scan"
+    - title: "Pathologies de la Rétine"
+      description: "Diagnostic et suivi des maculopathies, de la rétinopathie diabétique, des occlusions vasculaires rétiniennes et des dégénérescences rétiniennes périphériques."
+      icon: "retina"
+    - title: "Glaucome"
+      description: "Dépistage, diagnostic et suivi du glaucome par tonométrie, pachymétrie, OCT des fibres nerveuses et champ visuel. Définition du traitement médical ou indication chirurgicale."
+      icon: "pressure"
+    - title: "Cataracte"
+      description: "Bilan pré-opératoire complet, calcul de l'implant intraoculaire par biométrie de dernière génération et planification de l'intervention chirurgicale."
+      icon: "lens"
+    - title: "Ophtalmologie Pédiatrique"
+      description: "Dépistage visuel en âge pédiatrique, évaluation du strabisme, de l'amblyopie et des défauts réfractifs chez l'enfant."
+      icon: "child"
+
+  surgery_title: "Activité Chirurgicale"
+  surgery_subtitle: "Le Dr. Serra réalise des interventions de chirurgie oculaire avec des techniques microchirurgicales de dernière génération."
+  surgery_intro: >
+    L'activité chirurgicale du Dr. Serra se concentre sur la chirurgie de l'œil interne,
+    avec une compétence particulière en chirurgie vitréo-rétinienne et en chirurgie de la
+    cataracte. Chaque intervention est planifiée de manière rigoureuse en fonction des
+    caractéristiques individuelles du patient, avec l'objectif d'obtenir le meilleur
+    résultat fonctionnel possible.
+  surgery_procedures_title: "Principales interventions"
+  surgery_procedures:
+    - title: "Chirurgie Vitréo-Rétinienne"
+      description: "Vitrectomie pour le traitement du décollement de rétine, de la membrane épirétinienne (pucker maculaire), du trou maculaire, des complications de la rétinopathie diabétique et des hémorragies du vitré."
+    - title: "Chirurgie de la Cataracte"
+      description: "Phacoémulsification avec implantation de lentille intraoculaire, y compris lentilles toriques pour la correction de l'astigmatisme et lentilles multifocales pour la presbytie."
+    - title: "Injections Intravitréennes"
+      description: "Administration intravitréenne de médicaments anti-VEGF et corticostéroïdes pour le traitement de la dégénérescence maculaire liée à l'âge, de l'œdème maculaire diabétique et des occlusions veineuses rétiniennes."
+    - title: "Chirurgie du Glaucome"
+      description: "Interventions filtrantes et implants de drainage pour le contrôle de la pression intraoculaire dans les formes de glaucome non contrôlées par le traitement médical."
+    - title: "Traitements Laser"
+      description: "Photocoagulation laser argon pour déchirures rétiniennes et rétinopathie diabétique. Laser YAG pour capsulotomie postérieure et iridotomie. Laser sélectif (SLT) pour le glaucome."
+
+  clinics_title: "Cabinets"
+  clinics_subtitle: "Le Dr. Serra reçoit dans les cabinets privés suivants"
+  clinics_address: "Adresse"
+  clinics_phone: "Téléphone"
+  clinics_email: "Email"
+  clinics_hours: "Horaires"
+  clinics_book: "Réserver"
+
+  footer_text: "© 2026 Dr. Umberto Serra — Médecin Chirurgien Spécialiste en Ophtalmologie"
+  footer_disclaimer: "Les informations contenues dans ce site ont un but purement informatif et ne remplacent en aucun cas l'avis du médecin."

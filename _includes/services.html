@@ -1,0 +1,57 @@
+{% assign t = site.data.i18n[page.lang] %}
+
+<section id="services" class="py-20 sm:py-28 bg-primary-50/40">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 fade-in">
+      <div class="flex items-center justify-center gap-3 mb-3">
+        <div class="w-8 h-0.5 bg-accent-500"></div>
+        <p class="text-primary-600 text-sm font-semibold tracking-widest uppercase">{{ t.nav_services }}</p>
+        <div class="w-8 h-0.5 bg-accent-500"></div>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900">{{ t.services_title }}</h2>
+      <p class="mt-4 font-display italic text-gray-500 max-w-2xl mx-auto">{{ t.services_subtitle }}</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for service in t.services %}
+      <div class="fade-in bg-white rounded-xl p-7 border-t-3 border-t-accent-400/70 border border-gray-200/60 hover:border-primary-200 card-lift group">
+        <div class="w-11 h-11 rounded-lg bg-primary-100 flex items-center justify-center mb-5 group-hover:bg-primary-600 transition-colors duration-300">
+          {% if service.icon == "eye" %}
+          <svg class="w-5 h-5 text-primary-700 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+          </svg>
+          {% elsif service.icon == "scan" %}
+          <svg class="w-5 h-5 text-primary-700 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+          </svg>
+          {% elsif service.icon == "retina" %}
+          <svg class="w-5 h-5 text-primary-700 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9" stroke-width="1.5" fill="none"/>
+            <circle cx="12" cy="12" r="3" stroke-width="1.5" fill="none"/>
+            <line x1="12" y1="3" x2="12" y2="9" stroke-width="1.5"/>
+            <line x1="12" y1="15" x2="12" y2="21" stroke-width="1.5"/>
+            <line x1="3" y1="12" x2="9" y2="12" stroke-width="1.5"/>
+            <line x1="15" y1="12" x2="21" y2="12" stroke-width="1.5"/>
+          </svg>
+          {% elsif service.icon == "pressure" %}
+          <svg class="w-5 h-5 text-primary-700 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          {% elsif service.icon == "lens" %}
+          <svg class="w-5 h-5 text-primary-700 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+          </svg>
+          {% elsif service.icon == "child" %}
+          <svg class="w-5 h-5 text-primary-700 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          {% endif %}
+        </div>
+        <h3 class="text-base font-semibold text-gray-900 mb-2">{{ service.title }}</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">{{ service.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f0f5fa;
+  --color-primary-100: #dae5f2;
+  --color-primary-200: #b8cee6;
+  --color-primary-300: #8bb1d5;
+  --color-primary-400: #5e8fc0;
+  --color-primary-500: #4174a8;
+  --color-primary-600: #345d8d;
+  --color-primary-700: #2c4d73;
+  --color-primary-800: #284260;
+  --color-primary-900: #253951;
+  --color-primary-950: #192536;
+
+  --color-accent-50: #f5f7f0;
+  --color-accent-100: #e8eddc;
+  --color-accent-200: #d3debb;
+  --color-accent-300: #b4c78f;
+  --color-accent-400: #97b06a;
+  --color-accent-500: #7a954d;
+  --color-accent-600: #5f763b;
+  --color-accent-700: #4a5c31;
+  --color-accent-800: #3d4a2b;
+  --color-accent-900: #354027;
+  --color-accent-950: #1b2213;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Scroll offset for fixed header */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  /* Text balance for long paragraphs */
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  /* Fade-in on scroll */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hero grid pattern overlay */
+  .hero-pattern {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Card lift on hover */
+  .card-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -8px rgba(0,0,0,0.1);
+  }
+}

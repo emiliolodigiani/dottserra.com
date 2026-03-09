@@ -1,0 +1,23 @@
+title: "Dr. Umberto Serra - Medico Oculista"
+description: "Dr. Umberto Serra - Medico Chirurgo Specialista in Oftalmologia"
+baseurl: ""
+url: "https://dottserra.com"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "it"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - README.md
+
+plugins:
+  - jekyll-seo-tag

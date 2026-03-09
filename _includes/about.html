@@ -1,0 +1,48 @@
+{% assign t = site.data.i18n[page.lang] %}
+
+<section id="about" class="py-20 sm:py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+
+      <!-- Photo column with decorative frame -->
+      <div class="lg:col-span-2 fade-in">
+        <div class="relative">
+          <div class="absolute -inset-3 border border-primary-200/60 rounded-2xl"></div>
+          <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-primary-100 shadow-xl">
+            <img src="{{ '/assets/img/dr-serra.jpg' | relative_url }}"
+                 alt="Dr. Umberto Serra"
+                 class="w-full h-full object-cover"
+                 loading="lazy">
+          </div>
+          <div class="absolute -bottom-3 -right-3 w-20 h-20 bg-accent-100/60 rounded-2xl -z-10"></div>
+        </div>
+      </div>
+
+      <!-- Text column -->
+      <div class="lg:col-span-3 fade-in">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-8 h-0.5 bg-accent-500"></div>
+          <p class="text-primary-600 text-sm font-semibold tracking-widest uppercase">{{ t.nav_about }}</p>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-8">{{ t.about_title }}</h2>
+
+        <div class="space-y-5 text-gray-600 leading-relaxed">
+          <p>{{ t.about_p1 }}</p>
+          <p>{{ t.about_p2 }}</p>
+        </div>
+
+        <div class="mt-10 pt-8 border-t border-gray-200">
+          <h3 class="text-sm font-semibold tracking-widest uppercase text-primary-700 mb-5">{{ t.about_experience_title }}</h3>
+          <ul class="grid sm:grid-cols-2 gap-3">
+            {% for item in t.about_experience %}
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent-500 flex-shrink-0"></span>
+              <span class="text-sm text-gray-700">{{ item }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
