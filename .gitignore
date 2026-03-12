@@ -4,3 +4,4 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 assets/css/style.css
+.DS_Store
